@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">SWIFT RIDES</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">INVENTORY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SPECIAL PRICED CARS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">CART</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              USER
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="register.html">Register</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <section>
+    <div class="service">
+      <img
+        src="https://media.istockphoto.com/photos/white-vans-in-a-row-picture-id492945404?k=20&m=492945404&s=612x612&w=0&h=s4tOsFu-eVcnO9OQEmoYj3XNOdHPk5Kdih0W-DIEdFg="
+        class="d-block w-100" alt="..." />
+    </div>
+    <div class="inputs-search">
+      <input class="type" type="text" placeholder="Type in make, model or year...">
+      <button class="brcolo"><i class="fa fa-search"></i></button>
+    </div>
+
+
+
+
+    <!-- <div class="looking">
+        <p class="lookin">LOOKING FOR SOMETHING SPECIFIC?</p>
+        <div class="input-flex">
+         <input placeholder="YEAR" class="year"> 
+         <input placeholder="MODEL" class="year">
+        <button class="search"><i class="fa fa-search"></i></button>
+
+        </div>
+      </div> -->
+
+  </section>
+
+
+  <span class="cleanbt">
+    <button class="cleanb">SALAVAGE/REBUILT CARS</button>
+    <button class="cleanb">CLEAN CARS</button>
+    <button class="cleanb">UNDER $10000</button>
+    <button class="cleanb">UNDER $5000</button>
+  </span>
+
+  <div class="ftveh">
+    <p>
+      <center>FEATURED VEHICLES</center>
+    </p>
+  </div>
+  <section>
+    <div>
+      <!-- <img
+        src="https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=20&m=1138395421&s=612x612&w=0&h=FPYxPgxJBNucc79Z3fxAehsW6gvjw5jP17CJMsBRjGM="
+        alt="" class="imgp"> -->
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeMPJ1oWhlJu0hfqx91XSsifKKgFwc5gTxZA&usqp=CAU"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">2021 Audi RS7 </h5><br>
+                <p class="card-text">$110,000</p>
+                <a href="#" class="btn btn-dark">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">2015 Mercedes-Benz C400 4MATIC</h5>
+                <p class="card-text">$23,076</p>
+                <a href="#" class="btn btn-dark">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo2eQWIXajWOkOLYDBrAsqRSnZ5dI0l8r4lw&usqp=CAU"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> 2022 Ford Mustang</h5><br>
+                <p class="card-text">$79,420</p>
+                <a href="#" class="btn btn-dark">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://imgix.cosmicjs.com/a358d550-a018-11ec-a634-2f1716dd45af-TeslaModelXPlaidQ122SiteHero3.jpg?auto=format&fm=jpg&q=80&fit=crop&crop=entropy&w=812&h=457"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tesla Model X PLaid</h5>
+                <p class="card-text">$114,990</p>
+                <a href="#" class="btn btn-dark">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://image.cnbcfm.com/api/v1/image/106165374-15702116509742019dodgechallengersrthellcatredeye01.jpg?v=1570212538&w=1600&h=900"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Dodge Charger SRT Hellcat</h5>
+                <p class="card-text">$77,000</p>
+                <a href="#" class="btn btn-dark">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPeiMgo4IchqFTqGSzwFTpE8dSkQL-JmHVzw&usqp=CAU"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lexus ES 330</h5>
+                <p class="card-text">$9,230</p>
+                <a href="#" class="btn btn-dark">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <br><br>
+  <div>
+    <center>
+      <h1>Swift Rides</h1>
+      <h2>Buy slightly damaged cars from Swift Rides online</h2>
+      <h5 class="offers">Swift Rides offers a vast selection of used and slightly damaged vehicles for immediate
+        purchase. If you live
+        outside of the US and a consumer or a car dealer who wants to export a slightly damaged car to other countries,
+        Swift Rides is the right choice for you. With more than a decade of involvement with the vehicle
+        market, we, at the swiftride.netlify.app, have the mastery to get you what you need. Our groups of experts give
+        it
+        their 100 % throughout the day, consistently to help you in any capacity that we can. We plan to provide the
+        entirety of our clients with as much data concerning any inquiries or worries that they may have. Check out
+        swift rides eshop, our latest inventory, and get in touch with our experts to buy the used or salvage car you
+        want.</h6>
+    </center>
+  </div>
+  <br>
+  <br>
+  <!-- INVENTORY
+|
+HOW TO BUY
+|
+FAQS
+|
+TITLE TYPES
+|
+SHIPPING RATES
+|
+CONTACT
+2905 S Congress Ave,Delray Beach FL 33445 -->
+  <!-- <footer>
+    <section class="invent">
+      <div class="inventory">
+        <p>INVENTORY</p>
+        <p>HOW TO BUY</p>
+        <p>FAQS</p>
+        <p>TITLE TYPES</p>
+        <p>SHIPPING RATES</p>
+        <p>CONTACT</p>
+
+      </div>
+      
+    </section>
+    <br>
+      <div class="ave">
+        <span>
+           2905 S Congress Ave, Delray Beach FL 33445 </p>
+        </span>
+        </div>
+
+  </footer> -->
+  <!-- <footer> -->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-... me-3"></i>Swift Rides
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            OUR SERVICES
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">INVENTORY</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">SPECIAL PRICED CARS  </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cart</a>
+          </p>
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"> -->
+          <!-- Links -->
+          <!-- <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p> -->
+        <!-- </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    Copyright © 2021
+    <!-- <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  <!-- </footer> -->
+</body>
+<script src="bootstrap.min.js"></script>
+
+</html>

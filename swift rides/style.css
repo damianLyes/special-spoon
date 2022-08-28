@@ -1,0 +1,211 @@
+/* body {
+     overflow-x: hidden;
+} */
+body {
+    font-family: Montserrat;
+}
+
+nav {
+    background-color: rgb(51, 51, 235);
+
+    z-index: 7;
+
+}
+
+.service {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.service img {
+    height: 33rem;
+}
+
+
+.type {
+    width: 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.brcolo {
+    border-radius: 0 .5rem .5rem 0;
+    padding: 1rem;
+    background-color: rgb(42, 42, 204);
+    color: black;
+    font-size: 1rem;
+    border: none;
+
+}
+
+.inputs-search {
+    position: absolute;
+    /* position makes the word to be placed on thae images  */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 25%;
+    left: 5%;
+    width: 40%;
+    height: 4rem;
+
+}
+
+.looking {
+    position: absolute;
+    top: 78.3%;
+    left: 0%;
+    background-color: rgb(42, 42, 204);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.9;
+    width: 100%;
+    align-items: center;
+
+}
+
+.input-flex {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.year {
+    border-radius: .5rem;
+}
+
+.search {
+    border: none;
+    border-radius: .5rem;
+    width: 11rem;
+    background-color: rgb(42, 42, 204);
+    opacity: .9;
+}
+
+.search:hover {
+    background-color: white;
+}
+
+.cleanbt {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.cleanb {
+    width: 15rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: .5rem;
+    background-color: white;
+    border: 1px solid white;
+    padding: .5rem;
+
+}
+
+.cleanb:hover {
+    background-color: rgb(6, 6, 190);
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.imgp {
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+}
+
+.ftveh {
+    background-color: rgb(6, 6, 190);
+    color: white;
+    padding: 1px;
+    font-weight: bolder;
+    font-size: x-large;
+
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.offers {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.invent {
+    padding-left: 9rem;
+    border-top: 1px solid grey;
+    padding-top: 3rem;
+    color: grey;
+}
+
+.inventory {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 55%;
+}
+
+.ave {
+    color: grey;
+    padding-left: 9rem;
+}
+
+.card {
+    cursor: pointer;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+
+@media(max-width: 666px) {
+    .inputs-search {
+        width: 90%;
+        top: 36%;
+
+
+    }
+
+
+
+    .cleanbt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brcolo {
+        width: 30%;
+    }
+
+    .offers {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .inventory {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 0rem;
+    }
+
+    .invent {
+        padding-top: 1rem;
+    }
+
+    .invent {
+        padding-left: 30%;
+        justify-content: space-between;
+    }
+
+    .ave {
+        padding-left: 0%;
+        text-align: center;
+    }
+
+}
